@@ -1,0 +1,343 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4000E0D829AFDD85001B52AD /* Kitura-WebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 4000E0D729AFDD85001B52AD /* Kitura-WebSocket */; };
+		4000E0DB29AFDE26001B52AD /* Kitura in Frameworks */ = {isa = PBXBuildFile; productRef = 4000E0DA29AFDE26001B52AD /* Kitura */; };
+		4000E0E029AFE7EF001B52AD /* ShazamCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4000E0DF29AFE7EF001B52AD /* ShazamCatalog.swift */; };
+		4069CC7F29AFDB5400697CFF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4069CC7E29AFDB5400697CFF /* main.swift */; };
+		BDD6F31A88E72A2C5FBCB9FB /* Data+AVAudioPCMBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD6FCFD1C63E3DB34A4714B /* Data+AVAudioPCMBuffer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4069CC7929AFDB5400697CFF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4000E0DF29AFE7EF001B52AD /* ShazamCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShazamCatalog.swift; sourceTree = "<group>"; };
+		4063414429C1291C0092EC6A /* ListenOutLoud.shazamcatalog */ = {isa = PBXFileReference; lastKnownFileType = file; name = ListenOutLoud.shazamcatalog; path = "../../../../../Data Ingestion Pipeline/ListenOutLoud.shazamcatalog"; sourceTree = "<group>"; };
+		4069CC7B29AFDB5400697CFF /* RecognitionServiceServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RecognitionServiceServer; sourceTree = BUILT_PRODUCTS_DIR; };
+		4069CC7E29AFDB5400697CFF /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		BDD6FCFD1C63E3DB34A4714B /* Data+AVAudioPCMBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+AVAudioPCMBuffer.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4069CC7829AFDB5400697CFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4000E0DB29AFDE26001B52AD /* Kitura in Frameworks */,
+				4000E0D829AFDD85001B52AD /* Kitura-WebSocket in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4069CC7229AFDB5400697CFF = {
+			isa = PBXGroup;
+			children = (
+				4069CC7D29AFDB5400697CFF /* RecognitionServiceServer */,
+				4069CC7C29AFDB5400697CFF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4069CC7C29AFDB5400697CFF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4069CC7B29AFDB5400697CFF /* RecognitionServiceServer */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4069CC7D29AFDB5400697CFF /* RecognitionServiceServer */ = {
+			isa = PBXGroup;
+			children = (
+				4063414429C1291C0092EC6A /* ListenOutLoud.shazamcatalog */,
+				4069CC7E29AFDB5400697CFF /* main.swift */,
+				4000E0DF29AFE7EF001B52AD /* ShazamCatalog.swift */,
+				BDD6FCFD1C63E3DB34A4714B /* Data+AVAudioPCMBuffer.swift */,
+			);
+			path = RecognitionServiceServer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4069CC7A29AFDB5400697CFF /* RecognitionServiceServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4069CC8229AFDB5400697CFF /* Build configuration list for PBXNativeTarget "RecognitionServiceServer" */;
+			buildPhases = (
+				4069CC7729AFDB5400697CFF /* Sources */,
+				4069CC7829AFDB5400697CFF /* Frameworks */,
+				4069CC7929AFDB5400697CFF /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RecognitionServiceServer;
+			packageProductDependencies = (
+				4000E0D729AFDD85001B52AD /* Kitura-WebSocket */,
+				4000E0DA29AFDE26001B52AD /* Kitura */,
+			);
+			productName = RecognitionServiceServer;
+			productReference = 4069CC7B29AFDB5400697CFF /* RecognitionServiceServer */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4069CC7329AFDB5400697CFF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					4069CC7A29AFDB5400697CFF = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 4069CC7629AFDB5400697CFF /* Build configuration list for PBXProject "RecognitionServiceServer" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4069CC7229AFDB5400697CFF;
+			packageReferences = (
+				4000E0D629AFDD84001B52AD /* XCRemoteSwiftPackageReference "Kitura-WebSocket" */,
+				4000E0D929AFDE26001B52AD /* XCRemoteSwiftPackageReference "Kitura" */,
+			);
+			productRefGroup = 4069CC7C29AFDB5400697CFF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4069CC7A29AFDB5400697CFF /* RecognitionServiceServer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4069CC7729AFDB5400697CFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4069CC7F29AFDB5400697CFF /* main.swift in Sources */,
+				4000E0E029AFE7EF001B52AD /* ShazamCatalog.swift in Sources */,
+				BDD6F31A88E72A2C5FBCB9FB /* Data+AVAudioPCMBuffer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4069CC8029AFDB5400697CFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4069CC8129AFDB5400697CFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		4069CC8329AFDB5400697CFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KW8RLKUW3C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4069CC8429AFDB5400697CFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KW8RLKUW3C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4069CC7629AFDB5400697CFF /* Build configuration list for PBXProject "RecognitionServiceServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4069CC8029AFDB5400697CFF /* Debug */,
+				4069CC8129AFDB5400697CFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4069CC8229AFDB5400697CFF /* Build configuration list for PBXNativeTarget "RecognitionServiceServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4069CC8329AFDB5400697CFF /* Debug */,
+				4069CC8429AFDB5400697CFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4000E0D629AFDD84001B52AD /* XCRemoteSwiftPackageReference "Kitura-WebSocket" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Kitura/Kitura-WebSocket";
+			requirement = {
+				kind = exactVersion;
+				version = 2.1.200;
+			};
+		};
+		4000E0D929AFDE26001B52AD /* XCRemoteSwiftPackageReference "Kitura" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Kitura/Kitura";
+			requirement = {
+				kind = exactVersion;
+				version = 2.9.200;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4000E0D729AFDD85001B52AD /* Kitura-WebSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4000E0D629AFDD84001B52AD /* XCRemoteSwiftPackageReference "Kitura-WebSocket" */;
+			productName = "Kitura-WebSocket";
+		};
+		4000E0DA29AFDE26001B52AD /* Kitura */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4000E0D929AFDE26001B52AD /* XCRemoteSwiftPackageReference "Kitura" */;
+			productName = Kitura;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 4069CC7329AFDB5400697CFF /* Project object */;
+}

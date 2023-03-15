@@ -1,0 +1,29 @@
+{
+    "dependencies": {
+        "@coral-xyz/anchor": "^0.26.0",
+        "@solana/spl-token": "^0.2.0"
+    },
+    "scripts": {
+        "build": "anchor build",
+        "new:programid": "rm -rf target/ && anchor build && anchor deploy",
+
+
+        "env:local": "solana config set --url l",
+        "deploy": "yarn env:local && anchor deploy --provider.cluster localnet",
+        "test": "yarn env:local && anchor test --skip-local-validator --provider.cluster localnet",
+        "test:nodeploy": "yarn env:local && anchor test --skip-local-validator --skip-deploy --provider.cluster localnet",
+
+        "env:devnet": "solana config set --url d",
+        "deploy:devnet": "yarn env:devnet && anchor deploy --provider.cluster devnet",
+        "test:devnet": "yarn env:devnet && anchor test --skip-local-validator --provider.cluster devnet",
+        "test:devnet:nodeploy": "yarn env:devnet && anchor test --skip-local-validator --skip-deploy --provider.cluster devnet"
+    },
+    "devDependencies": {
+        "@types/chai": "^4.3.1",
+        "@types/mocha": "^9.1.1",
+        "chai": "^4.3.6",
+        "mocha": "^10.0.0",
+        "ts-mocha": "^10.0.0",
+        "typescript": "^4.6.4"
+    }
+}
